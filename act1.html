@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //solicitar al usuario que ingrese una calificaión
+        let calificación = parseFloat(prompt("ingresa una calificación entre 0 y 100:"));
+
+        //verificar que la calificación esté en el rango válido
+        if (calificación >= 0 && calificación <= 100) {
+            // evaluar la calificación y mostrar la calificación correspondiente
+            if (calificación >= 90){
+                alert("Aprobado con honores");
+            } else if (calificación >= 70){
+                alert("Aprobado");
+            } else {
+                alert("Reprobado");
+            }
+
+        } else {
+            alert("por favor, ingresa una calificación válida entre 0 y 100.");
+        }
+        
+    </script>
+</body>
+</html>
